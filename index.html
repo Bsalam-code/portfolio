@@ -1,61 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buhari Abdulsalam | Frontend Developer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buhari Abdulsalam | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Buhari Abdulsalam</h1>
-    <p class="title">Frontend Developer</p>
-  </header>
+    <header>
+        <h1>Hi, I'm <span class="name">Buhari Abdulsalam</span></h1>
+        <h2 class="typewriter">Frontend Developer | Problem Solver | Tech Enthusiast</h2>
+    </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-     I, Buhari Abdulsalam, am a highly motivated and passionate individual with a strong drive to succeed in everything I do. I’m deeply committed to mastering the art of web development and technology, dedicating time each day to improving my skills in HTML, CSS, JavaScript, and React.
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I, Buhari Abdulsalam, am a highly motivated and passionate individual with a strong drive to succeed in
+            everything I do. I’m deeply committed to mastering the art of web development and technology, dedicating
+            time each day to improving my skills in HTML, CSS, JavaScript, and React. My ultimate goal is to achieve
+            financial freedom and build a successful career that allows me to create meaningful digital solutions that
+            impact lives positively.
+        </p>
+    </section>
 
-I believe that consistency, discipline, and continuous learning are the keys to personal and professional growth. My ultimate goal is to achieve financial freedom and build a successful career that allows me to create meaningful digital solutions that positively impact lives.
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Scratch Programming</li>
+            <li>HTML & CSS</li>
+            <li>Basic Robotics</li>
+        </ul>
+    </section>
 
-I’m not just focused on writing code — I’m focused on creating value, solving problems, and turning ideas into powerful realities. I see challenges as opportunities to grow, and I never give up easily, no matter how tough the journey gets.
+    <section class="projects">
+        <h2>Projects</h2>
 
-I take pride in my determination, creativity, and ability to stay focused on my goals. Every day, I strive to become a better version of myself while inspiring others to do the same.
-    </p>
-  </section>
+        <div class="project">
+            <h3>📝 To-Do List App</h3>
+            <p>A simple web app that lets users add, complete, and delete daily tasks — built with HTML, CSS, and
+                JavaScript. Tasks are saved in browser storage.</p> <br>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Scratch Programming</li>
-      <li>HTML & CSS</li>
-      <li>Basic Robotics</li>
-    </ul>
-  </section>
 
-  <section class="projects">
-  <h2>Projects</h2>
+            <a href="https://bsalam-code.github.io/todo-app/" target="_blank" class="btn">View Live</a>
+            <a href="https://github.com/Bsalam-code/todo-app" target="_blank" class="btn">Source Code</a>
+        </div>
 
-  <div class="project">
-    <h3>📝 To-Do List App</h3>
-    <p>A simple web app that lets users add, complete, and delete daily tasks — built with HTML, CSS, and JavaScript. Tasks are saved in browser storage.</p>
-    <a href="https://bsalam-code.github.io/todo-app/" target="_blank" class="btn">View Live</a>
-    <a href="https://github.com/Bsalam-code/todo-app" target="_blank" class="btn">Source Code</a>
-  </div>
+        <p style="margin-top: 20px;">More projects coming soon!</p>
+    </section>
 
-  <p style="margin-top: 20px;">More projects coming soon!</p>
-</section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:buhariabdulsalam05@gmail.com">buhariabdulsalam05@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Bsalam-code" target="_blank">Bsalam-code</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Buhari Abdulsalam. All Rights Reserved.</p>
-  </footer>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:buhariabdulsalam05@gmail.com">buhariabdulsalam05@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Bsalam-code" target="_blank">Bsalam-code</a></p>
+    </section>
+    <button id="topBtn">↑</button>
+    <footer>
+        <p>© 2025 Buhari Abdulsalam. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const topBtn = document.getElementById('topBtn');
+        window.onscroll = () => {
+            topBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        };
+        topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
 </body>
 
 </html>
+
